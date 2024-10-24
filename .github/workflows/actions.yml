@@ -11,7 +11,7 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
           cache: 'maven'
-          cache-dependency-path: 'gh-actions-scratch/pom.xml'
+          cache-dependency-path: 'pom.xml'
       - name: Build with Maven
         working-directory: gh-actions-scratch
         run: mvn -B package --file pom.xml
